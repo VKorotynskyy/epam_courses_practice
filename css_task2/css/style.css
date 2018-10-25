@@ -55,7 +55,7 @@ h4 {
 	display: flex;
 	justify-content: space-between;
 	height: 2.5em;
-	padding: 5.5em 12.8em 15em;
+	padding: 5.5em 10em 15em;
 }
 .header-logo {
 	cursor: pointer;
@@ -448,6 +448,7 @@ h4 {
 	line-height: 1.1em;
 	padding-bottom: 1em;
 }
+
 /* Clients section */
 
 /* Blog section */
@@ -457,3 +458,45 @@ h4 {
 /* Contact section */
 
 /* Footer */
+.footer {
+	background-color: rgba(0, 0 , 0, .8);
+	height: 7em;
+}
+.footer-pane {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 2.5em;
+	padding: 3.5em 10em 0;
+}
+.footer-logo {
+	cursor: pointer;
+	display: flex;
+	height: 2em;
+	flex-shrink: 0;
+	margin-right: 10em;
+}
+.footer-text {
+	color: #FFFFFF;
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding-left: .5em;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.footer-menu {
+	align-self: center;
+	width: 100%;
+	height: 2em;
+	display: flex;
+}
+.footer-menu > li {
+	padding-right: 2em;
+	text-align: center;
+}
+.footer-menu > li > a {
+	color: #FFFFFF;
+	font-size: 1.3rem;
+	font-variant: small-caps;
+	font-weight: 600;
+}
