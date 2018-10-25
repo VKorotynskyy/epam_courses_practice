@@ -3,7 +3,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-size: 14px;
 	font-family: sans-serif;
 }
 ul, ol {
@@ -25,7 +24,7 @@ h3 {
 	font-weight: 900;
 }
 h4 {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-weight: 900;
 }
 .btn-green {
@@ -338,14 +337,14 @@ h4 {
 .teachers-block {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 7em;
+	grid-gap: 3em;
 	width: 80vw;
 	margin: 0 auto;
 	padding: 5em 0;
 }
 .teacher-card {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 1.5fr 3fr;
 	grid-template-areas: "img name" "img prof";
 }
 .teacher-img {
@@ -394,8 +393,61 @@ h4 {
 	font-weight: 900;
 	grid-area: prof;
 }
-/* Programs section */
 
+/* Programs section */
+.programs > h2 {
+	padding: 3rem 1rem 2.5rem;
+	text-align: center;
+}
+.programs-cards {
+	display: grid;
+	grid-gap: 5em;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	width: 80vw;
+	margin: 0 auto;
+	padding: 1em 0;
+}
+.program-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 30em;
+	height: 30em;
+	background-color: rgba(0, 255, 0, .3);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.program-card.pre-college {
+	background-image: url(/img/Rectangle55.png);
+}
+.program-card.middle {
+	background-image: url(/img/Rectangle56.png);
+}
+.program-card.high {
+	background-image: url(/img/Rectangle57.png);
+}
+.program-card.exchange {
+	background-image: url(/img/Rectangle58.png);
+}
+.program-card.graduate {
+	background-image: url(/img/Rectangle59.png);
+}
+.program-card.home {
+	background-image: url(/img/Rectangle60.png);
+}
+.program-card > h4,
+.program-card > p {
+	color: #FFFFFF;
+	line-height: 1.5em;
+	text-align: center;
+	width: 70%;
+}
+.program-card > h4 {
+	line-height: 1.1em;
+	padding-bottom: 1em;
+}
 /* Clients section */
 
 /* Blog section */
