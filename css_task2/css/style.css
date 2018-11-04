@@ -28,6 +28,10 @@ h4 {
 	font-size: 1.7rem;
 	font-weight: 900;
 }
+h5 {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
 .btn-green {
 	background: green;
 	border: none;
@@ -556,7 +560,76 @@ h4 {
 	font-size: 1.5rem;
 	color: grey;
 }
+
 /* Blog section */
+/* .blog {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+} */
+.blog > h2 {
+	padding: 3rem 1rem 2.5rem;
+	text-align: center;
+}
+.blog-cards {
+	display: flex;
+	width: 100%;
+	margin-bottom: 5em;
+}
+.blog-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	width: 20%;
+	margin-right: 1em;
+}
+.blog-card:nth-child(6) {
+	margin: 0;
+}
+.blog-card-img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 22em;
+	margin-bottom: 2em;
+}
+.blog-card > h5 {
+	padding-bottom: 1.5em;
+	height: 5em;
+}
+.blog-card > p {
+	min-width: 80%;
+	text-align: center;
+}
+.blog-card-img.img1 {
+background-image: url(/img/blog.png);
+}
+.blog-card-img.img2 {
+background-image: url(/img/blog1.png);
+}
+.blog-card-img.img3 {
+background-image: url(/img/blog2.png);
+}
+.blog-card-img.img4 {
+background-image: url(/img/blog3.png);
+}
+.blog-card-img.img5 {
+background-image: url(/img/blog4.png);
+}
+.blog-card-img.img6 {
+background-image: url(/img/blog5.png);
+}
+.blog-button.btn-green {
+	display: block;
+	margin: 0 auto 5em;
+	font-size: 1rem;
+	font-weight: 600;
+	height: 4em;
+	width: 9.5em;
+	text-align: center;
+}
 
 /* Subscribe section */
 
