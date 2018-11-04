@@ -632,7 +632,33 @@ background-image: url(/img/blog5.png);
 }
 
 /* Subscribe section */
-
+.subscribe {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-image: url(/img/Rectangle65.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 10em;
+}
+.subscribe-text {
+	color: #FFFFFF;
+	font-size: 2rem;
+	font-weight: 600;
+}
+.subscribe-input {
+	height: 2em;
+	width: 25em;
+	border-bottom: 1px solid #FFFFFF;
+}
+.subscribe-btn.btn-green {
+	font-size: 1rem;
+	font-weight: 600;
+	height: 3.5em;
+	width: 9.5em;
+	text-align: center;
+}
 /* Contact section */
 
 /* Footer */
