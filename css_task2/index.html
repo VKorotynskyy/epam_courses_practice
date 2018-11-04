@@ -106,8 +106,8 @@
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, et.</p>
 					</div>
 					<div class="courses-schedule">
-						<span>Time: 3 pm</span>
-						<span>Teacher: Ressie Rottman</span>
+						<span class="courses-time">Time: 3 pm</span>
+						<span class="courses-teacher">Teacher: Ressie Rottman</span>
 						<button type="submit" class="btn-green">Join Now</button>
 					</div>
 				</div>
@@ -118,8 +118,8 @@
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, voluptate?</p>
 					</div>
 					<div class="courses-schedule">
-						<span>Time: 10 am</span>
-						<span>Teacher: Elena Culi</span>
+						<span class="courses-time">Time: 10 am</span>
+						<span class="courses-teacher">Teacher: Elena Culi</span>
 						<button type="submit" class="btn-green">Join Now</button>
 					</div>
 				</div>
@@ -130,8 +130,8 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quod.</p>
 					</div>
 					<div class="courses-schedule">
-						<span>Time: 6 pm</span>
-						<span>Teacher: Floyd Fucuda</span>
+						<span class="courses-time">Time: 6 pm</span>
+						<span class="courses-teacher">Teacher: Floyd Fucuda</span>
 						<button type="submit" class="btn-green">Join Now</button>
 					</div>
 				</div>
@@ -293,30 +293,33 @@
 			<div class="subscribe-btn btn-green">Sign Up</div>
 		</section>
 		<section class="contact" id="contact">
-			<div class="contact-form">
-				<form action="" method="GET">
-					<input type="text" name="" id="" placeholder="Full name">
-					<input type="email" name="" id="" placeholder="Email">
-					<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-					<input type="submit" value="Send">
+			<h2>Contact</h2>
+			<div class="contact-container">
+				<form class="contact-form" action="" method="GET">
+					<input class="name" type="text" name="full name" id="formName" placeholder="Full name">
+					<input class="email" type="email" name="email" id="formEmail" placeholder="Email">
+					<textarea name="comments" id="formComments" cols="30" rows="7" placeholder="Message"></textarea>
+					<input class="form-btn btn-green" type="submit" value="Send">
 				</form>
-			</div>
-			<div class="contact-block">
-				<div class="contact-map"></div>
-				<div class="contact-details">
-					<div class="contact-info">
-						<img src="" alt="">
-						<span>LSE Houghton street</span>
-						<span>London WC2A 2AE</span>
-						<span>UK</span>
+				<div class="contact-block">
+					<div class="contact-map">
+						<iframe src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=%D0%94%D1%89%D1%82%D0%B2%D1%89%D1%82%2C%20Houghton%20street+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 					</div>
-					<div class="contact-info">
-						<img src="" alt="">
-						<span>hello@gmail.com</span>
-					</div>
-					<div class="contact-info">
-						<img src="" alt="">
-						<span>+44(20) 74057686</span>
+					<div class="contact-details">
+						<div class="contact-info">
+							<div class="contact-icon contact-icon-location"></div>
+							<span>LSE Houghton street</span>
+							<span>London WC2A 2AE</span>
+							<span>UK</span>
+						</div>
+						<div class="contact-info">
+							<div class="contact-icon contact-icon-email"></div>
+							<span>hello@gmail.com</span>
+						</div>
+						<div class="contact-info">
+							<div class="contact-icon contact-icon-phone"></div>
+							<span>+44(20) 74057686</span>
+						</div>
 					</div>
 				</div>
 			</div>

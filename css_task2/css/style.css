@@ -13,7 +13,7 @@ a {
 	text-decoration: none;
 }
 h1 {
-	font-size: 5.5rem;
+	font-size: 5.2rem;
 	font-weight: 900;
 }
 h2 {
@@ -36,10 +36,14 @@ h5 {
 	background: green;
 	border: none;
 	border-radius: 7em;
-	box-shadow: none;
+	box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
 	color: #FFFFFF;
 	cursor: pointer;
 	padding: 1em;
+}
+.btn-green:hover {
+	box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+	transform: translate(0px, -1px);
 }
 .wrapper {
 	width: 100%;
@@ -250,7 +254,7 @@ h5 {
 
 /* Courses section */
 .courses {
-	width: 80vw;
+	width: 80%;
 	margin: 2em auto;
 }
 .courses > h2 {
@@ -292,8 +296,9 @@ h5 {
 	align-items: flex-start;
 	line-height: 1.3rem;
 	padding-left: 2em;
-	margin-bottom: 3em;
-	width: 100%;
+	margin-bottom: 2em;
+	min-height: 15em;
+	min-width: 100%;
 	word-break: normal;
 }
 .courses-details > h4 {
@@ -320,10 +325,15 @@ h5 {
 .courses-schedule > span {
 	font-size: 1.2rem;
 	font-weight: 900;
-	padding: 0.5em 0;
+	padding: 1em 0;
 	box-shadow: 0 4px 1px -2px #D3D3D3; 
 	text-align:  center;
 	width: 80%;
+	min-height: 5em;
+}
+.courses-schedule .courses-time {
+	min-height: 2em;
+	
 }
 .courses-schedule .btn-green {
 	font-size: 1rem;
@@ -332,6 +342,7 @@ h5 {
 	width: 90%;
 }
 .courses-more {
+	cursor: pointer;
 	color: grey;
 	display: block;
 	font-size: 1.2rem;
@@ -604,22 +615,22 @@ h5 {
 	text-align: center;
 }
 .blog-card-img.img1 {
-background-image: url(/img/blog.png);
+background-image: url("/img/blog.png");
 }
 .blog-card-img.img2 {
-background-image: url(/img/blog1.png);
+background-image: url("/img/blog1.png");
 }
 .blog-card-img.img3 {
-background-image: url(/img/blog2.png);
+background-image: url("/img/blog2.png");
 }
 .blog-card-img.img4 {
-background-image: url(/img/blog3.png);
+background-image: url("/img/blog3.png");
 }
 .blog-card-img.img5 {
-background-image: url(/img/blog4.png);
+background-image: url("/img/blog4.png");
 }
 .blog-card-img.img6 {
-background-image: url(/img/blog5.png);
+background-image: url("/img/blog5.png");
 }
 .blog-button.btn-green {
 	display: block;
@@ -636,7 +647,7 @@ background-image: url(/img/blog5.png);
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	background-image: url(/img/Rectangle65.png);
+	background-image: url("/img/Rectangle65.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -659,7 +670,81 @@ background-image: url(/img/blog5.png);
 	width: 9.5em;
 	text-align: center;
 }
+
 /* Contact section */
+.contact > h2 {
+	padding: 3rem 1rem 0.5rem;
+	text-align: center;
+}
+.contact-container {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	width: 80%;
+	margin: 2em auto;
+}
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+	margin-right: 2em;
+}
+.contact-form > input {
+	font-size: 1.3rem;
+	border: none;
+	box-shadow: 0 4px 1px -2px #D3D3D3;
+	line-height: 2.2em;
+	margin-bottom: .5em;
+}
+.contact-form > textarea {
+	font-size: 1.3rem;
+	padding: 1.2em;
+	margin: 1em 0 1.5em;
+}
+.form-btn.btn-green {
+	font-size: 1.2rem;
+	font-weight: 600;
+	height: 4.2em;
+	width: 12em;
+	text-align: center;
+}
+.contact-block {
+	flex-basis: 50%;
+}
+.contact-map > iframe{
+	min-width: 100%;
+	height: 20em;
+	margin-bottom: 2em;
+}
+.contact-details {
+	display: flex;
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 33%;
+}
+.contact-icon {
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 2em;
+	height: 2em;
+	margin-bottom: 1em;
+}
+.contact-icon.contact-icon-location {
+	background-image: url("/img/location.png")
+}
+.contact-icon.contact-icon-email {
+	background-image: url("/img/message.png")
+}
+.contact-icon.contact-icon-phone {
+	background-image: url("/img/phone.png")
+}
+.contact-info > span {
+	font-size: 1rem;
+	line-height: 1.5em;
+}
 
 /* Footer */
 .footer {
