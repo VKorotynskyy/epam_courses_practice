@@ -923,11 +923,6 @@ background-image: url("/img/blog5.png");
 	.contact-container {
 		flex-direction: column;
 	}
-	.contact-map {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
 	.contact-form > textarea {
 		margin: 1.7em 0 1.5em;
 	}
