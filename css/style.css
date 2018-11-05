@@ -921,7 +921,7 @@ background-image: url("/img/blog5.png");
 		margin: 3.5em;
 	}
 	.contact-container {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 	.contact-form > textarea {
 		margin: 1.7em 0 1.5em;
@@ -931,6 +931,7 @@ background-image: url("/img/blog5.png");
 	}
 	.contact-details {
 		flex-direction: column;
+		margin-bottom: 2em;
 	}
 	.contact-info{
 		padding: 1em 0;
