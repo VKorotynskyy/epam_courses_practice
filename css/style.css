@@ -515,7 +515,7 @@ h5 {
 	height: 3rem;
 	position: absolute;
 	top: 20%;
-	left: 1%;
+	left: 5%;
 	transform: rotate(45deg);
 	border-left: 5px solid grey;
 	border-bottom: 5px solid grey;
@@ -528,7 +528,7 @@ h5 {
 	height: 3rem;
 	position: absolute;
 	top: 20%;
-	right: 1%;
+	right: 5%;
 	transform: rotate(45deg);
 	border-right: 5px solid grey;
 	border-top: 5px solid grey;
@@ -536,12 +536,10 @@ h5 {
 }
 .clients-img {
 	background-size: contain;
+	background-position: center;
 	background-repeat: no-repeat;
 	min-width: 20%;
 }
-/* .clients-img:not(:nth-child(3)) {
-	background-color: rgba(0, 0 , 0, .8);
-} */
 .client1 {
 	background-image: url(/img/client.png);
 }
@@ -656,8 +654,8 @@ background-image: url("/img/blog5.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 0 2em;
-	width: 100%;
-	height: 10em;
+	min-width: 100%;
+	min-height: 10em;
 }
 .subscribe-text {
 	color: #FFFFFF;
@@ -705,8 +703,9 @@ background-image: url("/img/blog5.png");
 }
 .contact-form > textarea {
 	font-size: 1.3rem;
+	border: 2px solid #D3D3D3;
 	padding: 1.2em;
-	margin: 1em 0 1.5em;
+	margin: 1em 0.1em 1.5em;
 }
 .form-btn.btn-green {
 	font-size: 1.2rem;
@@ -839,7 +838,8 @@ background-image: url("/img/blog5.png");
 		grid-template-columns: 1fr;
 	}
 	.clients-slider {
-		min-width: 70%;
+		min-width: 80%;
+		padding-bottom: 2em;
 	}
 	.blog-cards {
 		flex-direction: column;
@@ -870,8 +870,79 @@ background-image: url("/img/blog5.png");
 	}
 }
 @media screen and (max-width: 600px) {
-	h1 {
+	.header-main > h1 {
 		font-size: 4rem;
+	}
+	.education {
+		flex-direction: column;
+	}
+	.education .img-container {
+		width: 100%;
+		height: 25em;
+	}
+	.education .education-img {
+		min-width: 100%;
+	}
+	.features-cards-container {
+		grid-template-columns: 1fr;
+	}
+	.teachers-block {
+		grid-template-columns: 1fr;
+	}
+	.clients-slider .clients-img {
+		display: none;
+	}
+	.clients-slider .clients-img:nth-child(3) {
+		display: block;
+		background-size: contain;
+		margin: 0 auto;
+		width: 80%;
+		height: 20em;
+	}
+	.clients-text {
+		min-width: 90%;
+		padding-bottom: 2em;
+	}
+	.blog-card > h5 {
+		min-height: 2.5em;
+		width: 90%;
+	}
+	.blog-card > p {
+		width: 90%;
+	}
+	.subscribe {
+		flex-direction: column;
+		text-align: center;
+	}
+	.subscribe .subscribe-text {
+		margin: 2em;
+	}
+	.subscribe-btn.btn-green {
+		margin: 3.5em;
+	}
+	.contact-container {
+		flex-direction: column;
+	}
+	.contact-map {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.contact-form > textarea {
+		margin: 1.7em 0 1.5em;
+	}
+	.form-btn.btn-green {
+		margin: 2em auto
+	}
+	.contact-details {
+		flex-direction: column;
+	}
+	.contact-info{
+		padding: 1em 0;
+	}
+	.contact-info > div, 
+	.contact-info > span {
+		font-size: 1.5rem;
 	}
 	.footer-pane {
 		flex-direction: column;
@@ -896,7 +967,18 @@ background-image: url("/img/blog5.png");
 	}
 }
 @media screen and (max-width: 380px) {
-	h1 {
-		font-size: 3.5rem;
+	.header-main {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.header-main > h1 {
+		font-size: 3.3rem;
+		margin-top: 1em;
+	}
+	.header-main > p {
+		margin: 0;
+	}
+	.header-main .btn-green {
+		margin: 4em 0;
 	}
 }
